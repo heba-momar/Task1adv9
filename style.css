@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contaienr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+ 
+}
+h1 {
+    text-align: center;
+    margin: 20px;
+  }
+  .controls input,
+.controls select {
+  padding: 8px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+ 
+}
+
+.add{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.bookcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+
+}
+.floatingbtn {
+    background: #335f91;
+    color: white;
+    border: none;
+    width: 25%;
+    height:40px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .form-popup {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 250px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    height: 0;
+  }
+  .form-popup.show{
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+
+  }
+  
+  .form-popup input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+     font-size: 16px;
+  }
+  .form-popup button {
+    width: 100%;
+    padding: 7px;
+    background: #3c6ca2;
+    color: white;
+  }
+  .bookcards{
+    position: relative;
+        width: 25%;
+        border: 1px solid #f8f2f2;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        background-color: rgb(246 243 239 / 30%);;
+ 
+  }
+  
+  .bookcards h3 {
+    margin: 0 0 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .bookcards p {
+    margin: 3px 0;
+    font-size: 14px;
+    padding:10px 5px;
+    font-size: 20px;
+  }
+  
+  .bookcards button {
+    margin-top: 6px;
+    padding: 5px 8px;
+    font-size: 15px;
+    cursor: pointer;
+   margin:5px 20px;
+   text-align: center;
+   width: 25%;
+   padding: 7px;
+   background: #3c6ca2;
+   color: white;
+  }
+  

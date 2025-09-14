@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="styleSheet" href="./style.css"></link>
+</head>
+<body>
+    <div class="contaienr">
+     <h1>Library Mangement System</h1>
+     <div class="controls">
+        <input type="text" id="searchInput" placeholder="search about title or author">
+        <select id="categoryFilter">
+          <option value="all"> allcategorys</option>
+        </select>
+         <button id="addBookBtn" class="floatingbtn">add books</button>
+         
+       
+       
+    
+      <!-- نموذج إضافة كتاب -->
+      <div id="addForm" class="form-popup">
+        <input type="text" id="titleInput"placeholder=" tittel book"  required>
+        <input type="text" id="authorInput" placeholder="name author" required>
+        <input type="text" id="categoryInput" placeholder="categorys"required>
+        <input type="text" id="locationCodeInput" placeholder="locationCode">
+        <button id="submitBook">إضافة</button>
+      </div>
+      </div>
+    </div>
+    <div class="add" id="bookcontainer"></div>
+</body>
+<script src="./script.js"></script>
+
+</html>
