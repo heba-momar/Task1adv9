@@ -129,7 +129,7 @@ function renderBooks(books = library.getBooks()) {
       <p>Author:${book.getAuthor()}</p>
       <p>Category: ${book.getCategory()}</p>
       <p>Available:${book.isBookAvailable() ? "Yes" : "No"}</p>
-      <p>Location: ${book.getLocationCode }</p>
+      <p>Location: ${book.getLocationCode ?book.getLocationCode():"N/A"}</p>
       <button class="toggle-btn">isvisibal</button>
       <button class="delete-btn">Delete</button>`
     ;

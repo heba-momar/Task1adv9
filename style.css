@@ -5,9 +5,10 @@
 }
 .contaienr{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 10px;
 }
 .controls{
@@ -41,13 +42,6 @@ h1 {
     flex-wrap: wrap;
 }
 
-.bookcontainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-
-}
 .floatingbtn {
     background: #335f91;
     color: white;
@@ -91,27 +85,25 @@ h1 {
     color: white;
   }
   .bookcards{
-    position: relative;
         width: 25%;
         border: 1px solid #f8f2f2;
         padding: 15px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
-        background-color: rgb(246 243 239 / 30%);;
+        background-color: rgb(246 243 239 / 30%);
  
   }
   
   .bookcards h3 {
     margin: 0 0 5px;
-    padding: 10px;
+    padding: 8px;
     text-align: center;
     font-size: 24px;
   }
   
   .bookcards p {
     margin: 3px 0;
-    font-size: 14px;
-    padding:10px 5px;
+    padding:5px 5px;
     font-size: 20px;
   }
   
@@ -122,9 +114,36 @@ h1 {
     cursor: pointer;
    margin:5px 20px;
    text-align: center;
-   width: 25%;
+   width:70px;
    padding: 7px;
    background: #3c6ca2;
    color: white;
+  }
+  @media (max-width:990px) {
+    .add{
+      display: flex;
+      gap: 16px;
+      padding: 15px;
+      flex-wrap: wrap;
+  }
+  .form-popup {
+    padding: 20px;
+    border-radius: 8px;
+
+  }
+  .bookcards h3 {
+    padding: 5px;
+    font-size: 18px;
+  }
+  
+  .bookcards p {
+    margin: 3px 0;
+    font-size: 14px;
+  }
+  .bookcards{
+    width: 50%;
+    padding: 10px;
+
+}
   }
   
