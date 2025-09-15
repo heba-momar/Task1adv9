@@ -80,7 +80,7 @@ class Book {
   }
 
   filterByCategory(category) {
-    if (category === "all") return this.#books;
+    if (category ==="all" ) return this.#books;
     return this.#books.filter(book => book.getCategory() === category);
   }
 
